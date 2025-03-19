@@ -108,6 +108,12 @@ const CheckoutPage = () => {
         name="address"
         fullWidth
       />
+      <TextField
+        inputRef={addressRef}
+        label="Phone number"
+        name="phone"
+        fullWidth
+      />
       {renderCartItems()}
       <Button variant="contained" fullWidth onClick={handleConfirmOrder}>
         Order Now
