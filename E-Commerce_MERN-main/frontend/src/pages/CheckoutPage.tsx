@@ -37,6 +37,7 @@ const CheckoutPage = () => {
 
     navigate("/order-success");
   };
+  
 
   const renderCartItems = () => (
     <Box
@@ -111,7 +112,7 @@ const CheckoutPage = () => {
       <TextField
         inputRef={addressRef}
         label="Phone number"
-        name="phone"
+        name="address"
         fullWidth
       />
       {renderCartItems()}
