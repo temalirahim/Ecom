@@ -55,9 +55,10 @@ export default function ProductCard({ _id, title, image, price }: Props) {
     // </Card>
     <Card sx={{ width: 320, maxWidth: "100%", boxShadow: "lg" }}>
       <CardOverflow>
-        <AspectRatio sx={{ minWidth: 200 }}>
-          <img src={image} alt={title} loading="lazy" />
-        </AspectRatio>
+      <AspectRatio ratio="1" sx={{ width: "100%" }}>
+  <img src={image} alt={title} loading="lazy" style={{ objectFit: "contain" , backgroundColor: "white" }} />
+</AspectRatio>
+
       </CardOverflow>
       <CardContent>
         <Typography level="body-xs">Category</Typography>
